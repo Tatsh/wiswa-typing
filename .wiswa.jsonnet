@@ -5,5 +5,6 @@
   description: 'Shared types for the Wiswa ecosystem.',
   keywords: ['types', 'typeddict', 'typing', 'wiswa'],
   primary_module: 'wiswa',
+  primary_module_qualified: 'wiswa.typing',
   want_tests: false,
 }
