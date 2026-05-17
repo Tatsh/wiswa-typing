@@ -33,4 +33,4 @@ __all__ = ('CustomProjectBadge', 'ExportRequirements', 'PackageJSON', 'PackageJS
            'SettingsSocial', 'SettingsSocialMastodon', 'SettingsSocialTextAndURI', 'VSCode',
            'VSCodeLaunch', 'VSCodeLaunchConfiguration')
 
-__version__ = '0.0.0'
+__version__ = '0.0.1'

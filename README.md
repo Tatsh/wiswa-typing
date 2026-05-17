@@ -6,7 +6,7 @@
 [![PyPI - Version](https://img.shields.io/pypi/v/wiswa-typing)](https://pypi.org/project/wiswa-typing/)
 [![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/wiswa-typing)](https://github.com/Tatsh/wiswa-typing/tags)
 [![License](https://img.shields.io/github/license/Tatsh/wiswa-typing)](https://github.com/Tatsh/wiswa-typing/blob/master/LICENSE.txt)
-[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/wiswa-typing/v0.0.0/master)](https://github.com/Tatsh/wiswa-typing/compare/v0.0.0...master)
+[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/wiswa-typing/v0.0.1/master)](https://github.com/Tatsh/wiswa-typing/compare/v0.0.1...master)
 [![CodeQL](https://github.com/Tatsh/wiswa-typing/actions/workflows/codeql.yml/badge.svg)](https://github.com/Tatsh/wiswa-typing/actions/workflows/codeql.yml)
 [![QA](https://github.com/Tatsh/wiswa-typing/actions/workflows/qa.yml/badge.svg)](https://github.com/Tatsh/wiswa-typing/actions/workflows/qa.yml)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue?logo=dependabot)](https://github.com/dependabot)

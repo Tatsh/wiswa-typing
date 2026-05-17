@@ -10,7 +10,7 @@ resolution-markers = [
 ]
 
 [options]
-exclude-newer = "2026-05-09T09:57:20.317947022Z"
+exclude-newer = "2026-05-10T04:49:13.491519254Z"
 exclude-newer-span = "P1W"
 
 [[package]]
@@ -1983,7 +1983,7 @@ wheels = [
 
 [[package]]
 name = "wiswa-typing"
-version = "0.0.0"
+version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "typing-extensions" },
