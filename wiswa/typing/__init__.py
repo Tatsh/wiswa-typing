@@ -1,36 +1,8 @@
-"""wiswa-typing package: shared TypedDict definitions for the Wiswa ecosystem."""
+"""wiswa-typing package: shared type aliases for the Wiswa ecosystem."""
 from __future__ import annotations
 
-from .settings import (
-    CustomProjectBadge,
-    ExportRequirements,
-    PackageJSON,
-    PackageJSONPublishConfig,
-    PackageManager,
-    ProjectType,
-    PyProject,
-    PyProjectBuildSystem,
-    PyProjectProject,
-    PyProjectTool,
-    PyProjectToolCommitizen,
-    PyProjectToolPoetry,
-    PyProjectToolPoetryPackage,
-    PythonDeps,
-    Settings,
-    SettingsGitHub,
-    SettingsSocial,
-    SettingsSocialMastodon,
-    SettingsSocialTextAndURI,
-    VSCode,
-    VSCodeLaunch,
-    VSCodeLaunchConfiguration,
-)
+from .settings import PackageManager, ProjectType
 
-__all__ = ('CustomProjectBadge', 'ExportRequirements', 'PackageJSON', 'PackageJSONPublishConfig',
-           'PackageManager', 'ProjectType', 'PyProject', 'PyProjectBuildSystem', 'PyProjectProject',
-           'PyProjectTool', 'PyProjectToolCommitizen', 'PyProjectToolPoetry',
-           'PyProjectToolPoetryPackage', 'PythonDeps', 'Settings', 'SettingsGitHub',
-           'SettingsSocial', 'SettingsSocialMastodon', 'SettingsSocialTextAndURI', 'VSCode',
-           'VSCodeLaunch', 'VSCodeLaunchConfiguration')
+__all__ = ('PackageManager', 'ProjectType')
 
 __version__ = '0.0.1'

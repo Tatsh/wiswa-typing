@@ -49,12 +49,16 @@ The Wiswa settings shape and related `pyproject`/`package.json` types live at th
 from wiswa.typing import Settings, PyProject, PackageJSON
 ```
 
-For GitHub and GitLab payload types, import the submodule and use a short alias. Names inside
-those modules are not prefixed (for example `gh.Repository`, `gl.Config`):
+GitLab REST payload types used to configure remote project settings live in the `gitlab`
+submodule. Import it with a short alias; names inside it are not prefixed (for example
+`gl.RemoteSettings`):
 
 ```python
-from wiswa.typing import github as gh
 from wiswa.typing import gitlab as gl
 
-def annotate(repo: gh.Repository, config: gl.Config) -> None: ...
+def annotate(config: gl.RemoteSettings) -> None: ...
 ```
+
+GitHub payload types and the GitLab `Badge` type live in
+[wiswa-vcs](https://github.com/Tatsh/wiswa-vcs) under `wiswa.vcs.typing`, since only that
+package consumes them.
