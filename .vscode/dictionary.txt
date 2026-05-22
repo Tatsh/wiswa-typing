@@ -5,17 +5,12 @@ autodoc
 automodule
 bascom
 bsky
-buymeacoffee
-cashapp
-cashtag
 cdrommsf
 commitizen
 conftest
 cooldown
 coveragerc
 ctypes
-cutoff
-cyclonedx
 dashcam
 dataclasses
 datatable
@@ -68,7 +63,6 @@ pypi
 pyproject
 pytest
 pythonhosted
-reauthentication
 regen
 ripgreprc
 rstcheck
