@@ -6,7 +6,7 @@
 [![PyPI - Version](https://img.shields.io/pypi/v/wiswa-typing)](https://pypi.org/project/wiswa-typing/)
 [![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/wiswa-typing)](https://github.com/Tatsh/wiswa-typing/tags)
 [![License](https://img.shields.io/github/license/Tatsh/wiswa-typing)](https://github.com/Tatsh/wiswa-typing/blob/master/LICENSE.txt)
-[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/wiswa-typing/v0.0.1/master)](https://github.com/Tatsh/wiswa-typing/compare/v0.0.1...master)
+[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/wiswa-typing/v0.1.0/master)](https://github.com/Tatsh/wiswa-typing/compare/v0.1.0...master)
 [![CodeQL](https://github.com/Tatsh/wiswa-typing/actions/workflows/codeql.yml/badge.svg)](https://github.com/Tatsh/wiswa-typing/actions/workflows/codeql.yml)
 [![QA](https://github.com/Tatsh/wiswa-typing/actions/workflows/qa.yml/badge.svg)](https://github.com/Tatsh/wiswa-typing/actions/workflows/qa.yml)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue?logo=dependabot)](https://github.com/dependabot)
@@ -27,13 +27,12 @@
 
 <!-- WISWA-GENERATED-README:STOP -->
 
-Shared `TypedDict` definitions and type aliases used across the Wiswa ecosystem
+Shared type aliases used across the Wiswa ecosystem
 ([wiswa](https://github.com/Tatsh/wiswa), [wiswa-vcs](https://github.com/Tatsh/wiswa-vcs),
 [wiswa-mcp](https://github.com/Tatsh/wiswa-mcp)).
 
-This package ships **types only** — there is no runtime code. It exists so consumers can
-strongly type Wiswa settings and remote-host payload shapes without pulling in the full Wiswa
-generator, the GitHub/GitLab API clients, or the MCP server.
+This package ships **types only** — there is no runtime code. Its surface is intentionally
+small: just the two `Literal` aliases that more than one Wiswa package needs to agree on.
 
 ## Installation
 
@@ -43,22 +42,14 @@ pip install wiswa-typing
 
 ## Usage
 
-The Wiswa settings shape and related `pyproject`/`package.json` types live at the package level:
-
 ```python
-from wiswa.typing import Settings, PyProject, PackageJSON
+from wiswa.typing import PackageManager, ProjectType
 ```
 
-GitLab REST payload types used to configure remote project settings live in the `gitlab`
-submodule. Import it with a short alias; names inside it are not prefixed (for example
-`gl.RemoteSettings`):
+- `PackageManager`: `Literal['poetry', 'uv']`.
+- `ProjectType`: `Literal['c', 'c++', 'generic', 'lua', 'python', 'typescript', 'xcode']`.
 
-```python
-from wiswa.typing import gitlab as gl
-
-def annotate(config: gl.RemoteSettings) -> None: ...
-```
-
-GitHub payload types and the GitLab `Badge` type live in
-[wiswa-vcs](https://github.com/Tatsh/wiswa-vcs) under `wiswa.vcs.typing`, since only that
-package consumes them.
+Wiswa-internal settings shapes (`Settings`, `PyProject`, `PackageJSON`, `VSCode`, etc.) live in
+[wiswa](https://github.com/Tatsh/wiswa) under `wiswa.tool.typing`. GitHub and GitLab REST
+payload types (`Repository`, `Badge`, `RemoteSettings`, `ProjectSettings`, etc.) live in
+[wiswa-vcs](https://github.com/Tatsh/wiswa-vcs) under `wiswa.vcs.typing`.

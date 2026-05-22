@@ -5,4 +5,4 @@ from .settings import PackageManager, ProjectType
 
 __all__ = ('PackageManager', 'ProjectType')
 
-__version__ = '0.0.1'
+__version__ = '0.1.0'

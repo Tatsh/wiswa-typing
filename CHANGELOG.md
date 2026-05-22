@@ -9,6 +9,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-05-21
+
 ### Changed
 
 - **Breaking:** reduced the public API of `wiswa.typing` to just the `PackageManager` and
@@ -56,5 +58,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   ecosystem.
 - `py.typed` marker so downstream consumers pick up the bundled type information.
 
-[unreleased]: https://github.com/Tatsh/wiswa-typing/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/Tatsh/wiswa-typing/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Tatsh/wiswa-typing/compare/v0.0.1...v0.1.0
 [0.0.1]: https://github.com/Tatsh/wiswa-typing/releases/tag/v0.0.1
