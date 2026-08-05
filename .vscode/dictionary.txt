@@ -28,6 +28,7 @@ foxundermoon
 functools
 genindex
 globaltoc
+handoff
 hoverxref
 htmlcov
 intersphinx
@@ -72,9 +73,9 @@ setattr
 shellcheck
 shellformat
 snapcraft
-softprops
 soupsieve
 sphinxcontrib
+statusline
 tatsh
 tomlkit
 tomllib
@@ -87,9 +88,11 @@ undrafted
 vendored
 venv
 virtualenv
+winget
 wiswa
 wiswa's
 worktree
 yapf
 yapfignore
 yarnrc
+zizmor

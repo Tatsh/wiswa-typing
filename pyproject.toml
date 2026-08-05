@@ -4,23 +4,23 @@ requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
-  "commitizen>=4.16.2",
+  "commitizen>=4.16.5",
   "cz-path>=0.0.7",
-  "mypy>=2.1.0",
+  "mypy>=2.3.0",
   "ruff==0.16.0",
-  "ty>=0.0.35",
+  "ty>=0.0.64",
   "yapf>=0.43.0",
 ]
 docs = [
   "autodoc-pydantic>=2.2.0",
   "doc8>=2.0.0",
   "enum-tools[sphinx]>=0.13.0",
-  "esbonio>=2.0.0",
+  "esbonio>=2.1.0",
   "restructuredtext-lint>=2.0.2",
   "sphinx-datatables>=1.0.0",
   "sphinx-immaterial>=0.13.9",
   "sphinx>=9.1.0; python_version >= \"3.13\"",
-  "tomlkit>=0.15.0",
+  "tomlkit>=0.15.1",
 ]
 
 [project]
@@ -35,7 +35,7 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Typing :: Typed",
 ]
-dependencies = ["typing-extensions>=4.15.0"]
+dependencies = ["typing-extensions>=4.16.0"]
 description = "Shared types for the Wiswa ecosystem."
 keywords = ["types", "typeddict", "typing", "wiswa"]
 license = "MIT"
@@ -121,7 +121,21 @@ quote-style = "single"
 
 [tool.ruff.lint]
 extend-select = ["ALL"]
-ignore = ["ANN401", "COM812", "CPY001", "D203", "D204", "D212", "N818", "S404", "S603", "TD002"]
+ignore = [
+  "ANN401",
+  "COM812",
+  "CPY001",
+  "D203",
+  "D204",
+  "D212",
+  "N818",
+  "RUF105",
+  "RUF106",
+  "RUF201",
+  "S404",
+  "S603",
+  "TD002",
+]
 preview = true
 
 [tool.ruff.lint.flake8-builtins]
