@@ -56,9 +56,9 @@
       :target: https://github.com/Tatsh/wiswa-typing/stargazers
       :alt: Stargazers
 
-   .. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit
-      :target: https://github.com/pre-commit/pre-commit
-      :alt: pre-commit
+   .. image:: https://results.pre-commit.ci/badge/github/Tatsh/wiswa-typing/master.svg
+      :target: https://results.pre-commit.ci/latest/github/Tatsh/wiswa-typing/master
+      :alt: pre-commit.ci status
 
    .. image:: https://img.shields.io/badge/Prettier-black?logo=prettier
       :target: https://prettier.io/
