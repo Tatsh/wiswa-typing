@@ -82,7 +82,6 @@ soupsieve
 sphinxcontrib
 statusline
 tatsh
-tomlkit
 tomllib
 tostring
 typeddict
